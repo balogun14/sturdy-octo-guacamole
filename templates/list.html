@@ -11,8 +11,14 @@
   <p class="date">
     Published {{ post.publish}} by {{ post.author}}
   </p>
-  {{ post.body|truncatewords:30|linebreaks}}
+  <section>
+      {{ post.body|truncatewords:20|linebreaks}}
+
+  </section>
     {% endfor %}
-    {% include 'paginator.html' with page=page_obj %}
+    <footer>
+      {% include 'paginator.html' with page=page_obj %}
+
+    </footer>
 
 {% endblock %}

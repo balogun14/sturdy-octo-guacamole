@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Source+Sans+3:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Source+Sans+3:wght@300&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: purple;
+}
+a:hover{
+    color: rgb(41, 14, 41);
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+    overflow: hidden;
+}
+
+.container {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: inherit;
+    width: 600px;
+
+}
+
+#content {
+    flex-basis: 75%;
+    /* background-color: brown; */
+    background: #c03a2b2d;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+ .date{
+    margin-bottom: 20px;
+    color: grey;
+    font-family: 'Indie Flower', cursive;
+}
+
+section {
+    color: rgb(85, 95, 95);
+    padding-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Macondo', cursive;
+    text-transform: capitalize;
+}
+
+footer{
+    position: relative;
+    bottom: -20px;
+}
+.title{
+    padding: 20px;
+    word-wrap: normal;
+    word-break: keep-all;
+    
+}
+#sidebar{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 70px; */
+}
+.bar{
+    padding-right: 20px;
+    margin-right: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
